@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title> post </title>
+    </head>
+
+    <body>
+        <h4>WebRTC</h4>
+
+<ul>
+<li>performance over quality.</li>
+<li>transport-agnostic. May use UDP, TCP, SCTP or whatever.</li>
+<li>p2p</li>
+<li>need a signaling server for exchanging meta data with peers.</li>
+<li>signaling server can be used to monitor p2p data or store p2p data.</li>
+<li>Supports relatively new browsers only.</li>
+</ul>
+
+<h4>WebSocket</h4>
+
+<ul>
+<li>First a http upgrade request. Then client and server establish a TCP server.</li>
+<li>Data is masked (encrypted).</li>
+<li>Good as a notification system.</li>
+</ul>
+
+<h4>WebSocket rfc extract.</h4>
+
+<ul>
+* 
+</ul>
+
+<h4>WebSocket tutorialpoint extract.</h4>
+
+<ul>
+<li><p>handshake and initialize connection:</p>
+
+<p><code>
+var socket = new WebSocket("ws://the.webserver.com");
+</code></p></li>
+<li><p>Main API Events:</p>
+
+<ul>
+<li>Open: onopen, fired once connection established.</li>
+<li>Message: onmessage, fired when server send data.</li>
+<li>Close: onclose, close one purpose or bad network.</li>
+<li>Error: onerror, followed by termination of connection.</li>
+</ul></li>
+<li><p>Clientside action API:</p>
+
+<ul>
+<li>send: socket.send(text|files|binary|images);</li>
+<li>close: socket.close();</li>
+</ul></li>
+</ul>
+
+    </body>
+</html>
