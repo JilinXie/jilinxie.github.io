@@ -16,7 +16,7 @@ def generate_index():
 
 
 def generate_post():
-    files = os.walk('_posts').next()[-1]
+    files = [x for x in os.walk('_posts').next()[-1] if x.endswith('md')]
     with open('post.template', 'r') as f:
         template = Template(f.read())
     for fn in files:
