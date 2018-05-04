@@ -1,4 +1,4 @@
-# jilinxie.github.io
+t# jilinxie.github.io
 
 
 Yet a skeleton
@@ -15,3 +15,5 @@ TODO:
 * page style
 
 * date tag (post order)
+
+* markdown2 seems not the perfect lib to convert md to html. See the generated 18.5.4_Difference-between-uri-and-url.html
